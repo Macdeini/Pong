@@ -51,10 +51,10 @@ class Ball:
         else:
             self.xdirection = -1
 
-        self.model = pygame.Rect(self.start, random.randint(1, 85)*10, self.width, self.height)
+        self.model = pygame.Rect(self.start, random.randint(10, 85)*10, self.width, self.height)
 
     def randomize_direction(self):
-        self.model.top = random.randint(10, 850)
+        self.model.top = random.randint(10, 85)*10
         self.model.left = self.start
         if random.randint(0, 1) == 1:
             self.ydirection = 1
